@@ -9,14 +9,18 @@ const Home: React.FC = () => {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="min-h-screen flex items-center justify-center flex-col text-center px-6 bg-gradient-to-b from-blue-100 to-blue-50 relative">
-        <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-4xl font-bold text-blue-800 leading-tight mb-4">
-            🌍 Selamat datang di <span className="text-blue-600">Waspada-Ku</span>, platform informasi cuaca & gempa real-time!
-          </h1>
-          <p className="text-lg md:text-xl text-blue-700 mb-8">
-            Temukan info terkini seputar <strong>cuaca harian</strong> dan <strong>aktivitas gempa</strong> secara langsung.
-          </p>
+      <section className="min-h-screen flex items-center justify-center flex-col text-center px-6 bg-gradient-to-b from-blue-100 to-blue-50 relative select-none">
+        <div className="max-w-4xl">
+          <div className="flex justify-center items-center gap-0 mb-4">
+            <img
+              src="/assets/icon/logoWK.svg"
+              alt="Waspada-Ku"
+              className="w-10 h-0 md:w-20 md:h-20"
+            />
+            <h1 className="text-3xl md:text-4xl font-bold text-blue-800 tracking-wide">
+              Selamat datang di <span className="text-blue-600">Waspada-Ku</span>, platform informasi cuaca & gempa real-time!
+            </h1>
+          </div>
 
           <div className="flex justify-center gap-4 flex-wrap">
             <a
