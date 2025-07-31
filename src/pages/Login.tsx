@@ -37,10 +37,9 @@ const Login: React.FC = () => {
 
       {/* Konten Login */}
       <div className="bg-white p-8 md:p-10 rounded-2xl shadow-lg w-full max-w-md z-10">
-        {/* Header dengan Logo */}
         <div className="flex flex-col items-center mb-6 text-center">
           <img
-            src="/assets/icon/logoWK.svg"
+            src="/assets/icon/LogoWK.svg"
             alt="Waspada-Ku"
             className="w-16 h-16 mb-2"
             draggable={false}

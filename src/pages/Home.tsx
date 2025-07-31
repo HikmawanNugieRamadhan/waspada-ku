@@ -13,7 +13,7 @@ const Home: React.FC = () => {
         <div className="max-w-4xl">
           <div className="flex justify-center items-center gap-0 mb-4">
             <img
-              src="/assets/icon/logoWK.svg"
+              src="/assets/icon/LogoWK.svg"
               alt="Waspada-Ku"
               className="w-10 h-0 md:w-20 md:h-20"
             />

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { logout } from "../utils/auth"; // ✅ tambahkan ini
+import { logout } from "../utils/auth";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const navigate = useNavigate(); // ✅ navigasi untuk logout
+  const navigate = useNavigate(); // navigasi untuk logout
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <img src="/assets/icon/logoWK.svg" alt="Waspada-Ku" className="w-6 h-6" />
+          <img src="/assets/icon/LogoWK.svg" alt="Waspada-Ku" className="w-6 h-6" />
           <span className="text-lg font-semibold text-blue-700">Waspada-Ku</span>
         </Link>
 
