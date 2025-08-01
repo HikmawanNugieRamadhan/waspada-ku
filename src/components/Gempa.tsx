@@ -49,7 +49,7 @@ const Gempa: React.FC = () => {
       <div className="mb-6 flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="flex items-center gap-2">
           <img src="/assets/icon/gempa.svg" alt="Icon Gempa" className="w-6 h-6" />
-          <h2 className="text-2xl md:text-3xl font-bold text-blue-800">
+          <h2 className="text-2xl md:text-3xl font-bold text-blue-800 dark:text-white">
             {mode === "terkini" ? "Gempa Bumi Terkini" : "15 Gempa Dirasakan"}
           </h2>
         </div>
@@ -60,7 +60,7 @@ const Gempa: React.FC = () => {
             setMode(e.target.value as "terkini" | "dirasakan");
             setShowAllDirasakan(false);
           }}
-          className="border border-gray-300 rounded-md px-4 py-2 text-sm shadow-sm focus:outline-none"
+          className="border border-gray-300 dark:border-gray-600 bg-white dark:bg-blue-700 dark:text-white rounded-md px-4 py-2 text-sm shadow-sm focus:outline-none"
         >
           <option value="terkini">Gempa Terkini</option>
           <option value="dirasakan">Gempa Dirasakan</option>
@@ -69,9 +69,9 @@ const Gempa: React.FC = () => {
 
       {/* CONTENT */}
       {loading ? (
-        <p className="text-center">Memuat data...</p>
+        <p className="text-center dark:text-white">Memuat data...</p>
       ) : error ? (
-        <p className="text-center text-red-500">{error}</p>
+        <p className="text-center text-red-500 dark:text-red-400">{error}</p>
       ) : mode === "terkini" && terkini ? (
         <GempaCardTerkini data={terkini} />
       ) : mode === "dirasakan" && dirasakan ? (
@@ -81,7 +81,7 @@ const Gempa: React.FC = () => {
           toggleShowAll={() => setShowAllDirasakan((prev) => !prev)}
         />
       ) : (
-        <p className="text-center text-gray-500">
+        <p className="text-center text-gray-500 dark:text-gray-300">
           Tidak ada data untuk ditampilkan.
         </p>
       )}
