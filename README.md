@@ -5,9 +5,8 @@
 ## 🚀 Fitur Utama
 
 - 🔍 Cek prakiraan cuaca berdasarkan wilayah
-- 🌐 Info gempa terbaru (terasa & tidak terasa)
+- 🌐 Info gempa terbaru (terkini dan 15 dirasakan)
 - 🌗 Mode terang dan gelap (dark mode)
-- 📱 Responsif di semua perangkat
 - 🔃 Sorting data gempa (ascending/descending)
 
 ---
