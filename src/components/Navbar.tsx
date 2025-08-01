@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <img
-            src={menuOpen ? "/icons/close.svg" : "/icons/menu.svg"}
+            src={menuOpen ? "assets/icon/close.svg" : "assets/icon/menu.svg"}
             alt="Menu Icon"
             className="w-6 h-6"
           />

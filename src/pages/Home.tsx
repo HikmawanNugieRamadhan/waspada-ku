@@ -45,7 +45,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* SECTION: Cuaca & Gempa */}
-      <main className="px-4 pt-0 pb-12 max-w-7xl mx-auto space-y-16 -mt-24">
+      <main className="px-4 pt-52 pb-12 max-w-7xl mx-auto space-y-16 -mt-24">
         <section
           id="cuaca"
           className="scroll-mt-28 w-full bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-lg transition-colors duration-300"
